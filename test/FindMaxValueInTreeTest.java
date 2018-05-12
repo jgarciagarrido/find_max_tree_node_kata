@@ -15,4 +15,11 @@ public class FindMaxValueInTreeTest {
         }
     }
     
+    @Test
+    public void findMaxInOneChildTree() {
+        TreeNode root = new TreeNode(1);
+        assertThat(FindMaxValueInTree.findMax(root), is(1));
+
+    }
+
 }
