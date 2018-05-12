@@ -10,7 +10,7 @@ public class FindMaxValueInTreeTest {
         try {
             FindMaxValueInTree.findMax(root);
             fail("Should return an Exception");
-        } catch (Exception e) {
+        } catch (NullPointerException e) {
             
         }
     }
