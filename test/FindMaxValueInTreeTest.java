@@ -16,7 +16,7 @@ public class FindMaxValueInTreeTest {
     }
     
     @Test
-    public void findMaxInOneChildTree() {
+    public void findMaxInLeaf() {
         TreeNode root = new TreeNode(1);
         assertThat(FindMaxValueInTree.findMax(root), is(1));
 
