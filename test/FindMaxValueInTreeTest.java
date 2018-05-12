@@ -21,5 +21,12 @@ public class FindMaxValueInTreeTest {
         assertThat(FindMaxValueInTree.findMax(root), is(1));
 
     }
+    
+    @Test
+    public void findMaxInLeafWithDifferentValue() {
+        TreeNode root = new TreeNode(2);
+        assertThat(FindMaxValueInTree.findMax(root), is(2));
 
+    }
+    
 }

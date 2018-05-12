@@ -5,10 +5,10 @@
  */
 
 class FindMaxValueInTree {
-    static int findMax(TreeNode  root) {
-        if (root == null) {
+    static int findMax(TreeNode  tree) {
+        if (tree == null) {
             throw new NullPointerException();
         }
-        return 1;
+        return tree.value;
     }
 }
