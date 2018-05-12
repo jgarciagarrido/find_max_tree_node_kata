@@ -29,4 +29,12 @@ public class FindMaxValueInTreeTest {
 
     }
     
+    @Test
+    public void findMaxInOneChildTree() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        
+        assertThat(FindMaxValueInTree.findMax(root), is(2));
+    }
+    
 }
