@@ -9,10 +9,10 @@ public class FindMaxValueInTreeTest {
         TreeNode root = null;
         try {
             FindMaxValueInTree.findMax(root);
+            fail("Should return an Exception");
         } catch (Exception e) {
             
         }
-        fail("Should return an Exception");
     }
     
 }
