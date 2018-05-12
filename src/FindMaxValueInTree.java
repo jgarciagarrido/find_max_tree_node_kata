@@ -6,6 +6,9 @@
 
 class FindMaxValueInTree {
     static int findMax(TreeNode  root) {
+        if (root == null) {
+            throw new NullPointerException();
+        }
         return 0;
     }
 }
