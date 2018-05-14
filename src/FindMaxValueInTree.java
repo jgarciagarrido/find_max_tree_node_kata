@@ -10,7 +10,7 @@ class FindMaxValueInTree {
             return Math.max(tree.value, findMax(tree.left));
         }
         if(tree.right != null){
-            return Math.max(tree.value, tree.right.value);
+            return Math.max(tree.value, findMax(tree.right));
         }
         return tree.value;
     }
