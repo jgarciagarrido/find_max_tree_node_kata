@@ -54,9 +54,17 @@ public class FindMaxValueInTreeTest {
     }
     
     @Test
-    public void findMaxInUnbalancedTree() {
+    public void findMaxInUnbalancedTreeAtLeft() {
         TreeNode left = new TreeNode(50, 100, -10);
         TreeNode right = null;
+        TreeNode root = new TreeNode(6, left, right);
+        assertThat(FindMaxValueInTree.findMax(root), is(100));
+    }
+    
+    @Test
+    public void findMaxInUnbalancedTreeAtRight() {
+        TreeNode right = new TreeNode(50, 100, -10);
+        TreeNode left = null;
         TreeNode root = new TreeNode(6, left, right);
         assertThat(FindMaxValueInTree.findMax(root), is(100));
     }
