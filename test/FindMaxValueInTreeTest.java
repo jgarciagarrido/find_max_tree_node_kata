@@ -52,4 +52,12 @@ public class FindMaxValueInTreeTest {
         TreeNode root = new TreeNode(5, left, right);
         assertThat(FindMaxValueInTree.findMax(root), is(50));
     }
+    
+    @Test
+    public void findMaxInUnbalancedTree() {
+        TreeNode left = new TreeNode(50, 100, -10);
+        TreeNode right = null;
+        TreeNode root = new TreeNode(6, left, right);
+        assertThat(FindMaxValueInTree.findMax(root), is(100));
+    }
 }
