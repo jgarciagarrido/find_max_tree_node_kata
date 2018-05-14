@@ -44,4 +44,12 @@ public class FindMaxValueInTreeTest {
         
         assertThat(FindMaxValueInTree.findMax(root), is(2));
     }
+    
+    @Test
+    public void findMaxInPerfectTree() {
+        TreeNode left = new TreeNode(-22, 9, 50);
+        TreeNode right = new TreeNode(11, 9, 2);
+        TreeNode root = new TreeNode(5, left, right);
+        assertThat(FindMaxValueInTree.findMax(root), is(50));
+    }
 }
