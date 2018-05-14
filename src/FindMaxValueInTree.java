@@ -6,6 +6,9 @@ class FindMaxValueInTree {
         if(tree.left != null){
             return Math.max(tree.value, tree.left.value);
         }
+        if(tree.right != null){
+            return Math.max(tree.value, tree.right.value);
+        }
         return tree.value;
     }
 }
