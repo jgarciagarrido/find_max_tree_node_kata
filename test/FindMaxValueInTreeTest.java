@@ -30,11 +30,18 @@ public class FindMaxValueInTreeTest {
     }
     
     @Test
-    public void findMaxInOneChildTree() {
+    public void findMaxInOneChildTreeAtLeft() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         
         assertThat(FindMaxValueInTree.findMax(root), is(2));
     }
     
+    @Test
+    public void findMaxInOneChildTreeAtRight() {
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        
+        assertThat(FindMaxValueInTree.findMax(root), is(2));
+    }
 }
